@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TO-DO LIST</title>
+	<script type="text/javascript" src="js/todo.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/todo.css">		
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="principal">
+		<div class="container">
+			<div class="add" action="">
+				<input type="text" id="tareaInput" placeholder="Type a Task" onkeypress="return AddTask(event)"/>
+				<input type="button" class="boton" id="btn-borrar" onclick="deleteLi()" value="Delete All Tasks">
+				<input type="button" class="boton" id="btn-done" onclick="doneLi()" value="Delete Done Tasks">
+			</div>
+		</div>
+	</div>
+	<div class="tareas">
+		<div class="container">
+			<ul class="lista" id="lista">
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
